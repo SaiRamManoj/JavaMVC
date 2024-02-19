@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 public class BmiRestController {
 
     @RequestMapping(method = {RequestMethod.GET, RequestMethod.POST})
-    public String calculateBMI(@RequestParam("heigh") double heightInches, @RequestParam("weight") double weightLbs) {
+    public String calculateBMI(@RequestParam("height") double heightInches, @RequestParam("weight") double weightLbs) {
         return calculateBMIValue(heightInches, weightLbs);
     }
 
